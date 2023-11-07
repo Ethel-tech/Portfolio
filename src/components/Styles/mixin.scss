@@ -1,0 +1,23 @@
+@mixin vertical-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin sections {
+  padding: 25px;
+}
+
+@mixin ls-sections {
+  padding: 3% 10% 3% 10%;
+}
+
+@mixin btn-lt {
+  background-color: $sub-color5;
+  color: $background-color3;
+}
+
+@mixin btn-dt {
+  background-color: $background-color3;
+  color: $sub-color5;
+}

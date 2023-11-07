@@ -1,0 +1,29 @@
+@import "../../Styles//variables.scss";
+.hero-div {
+  color: $sub-color;
+  background-color: $dark-bg;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 10%;
+}
+@media (min-width: 1025px) {
+  .name {
+    font-weight: 700;
+    font-size: 36pt;
+  }
+  .job {
+    @extend .name;
+    font-size: 48pt;
+  }
+  .intro {
+    font-size: 22pt;
+  }
+}
+
+@media (max-width: 1025px) {
+  .hero-div {
+    padding-bottom: 70px;
+    padding-top: 50px;
+  }
+}

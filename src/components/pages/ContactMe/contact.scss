@@ -1,0 +1,36 @@
+@import "../../Styles/mixin.scss";
+@import "../../Styles//variables.scss";
+
+@media screen and (max-width: 1024px) {
+  .contact-me-section {
+    @include sections;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-me-section {
+    @include ls-sections;
+  }
+}
+
+.contact-me-section {
+  background-color: $dark-bg;
+  padding-top: 20px;
+}
+
+.form-div {
+  background-color: $light-bg;
+  color: $dark-bg;
+  padding: 20px 30px 30px 30px;
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.form-div input {
+  background-color: $sub-color;
+}
+
+.form-div textarea {
+  background-color: $sub-color;
+}

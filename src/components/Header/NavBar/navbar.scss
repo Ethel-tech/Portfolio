@@ -1,0 +1,65 @@
+@import "../../Styles/variables.scss";
+
+.navbar {
+  padding: 0;
+}
+
+.page-link a {
+  color: $sub-color;
+}
+
+.page-link a:visited {
+  color: $dark-bg2;
+}
+
+.page-link a:hover {
+  color: $dark-bg2;
+}
+
+.page-link a:active {
+  color: $dark-bg;
+}
+
+.nav-div {
+  background-color: $dark-bg3;
+  margin-top: 0;
+  color: $sub-color;
+}
+
+@media (min-width: 1025px) {
+  .nav-div {
+    padding-left: 50px;
+    padding-right: 110px;
+  }
+  .navRight {
+    margin-left: 75%;
+  }
+}
+
+.logo {
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.navbar-brand {
+  display: flex;
+  gap: 15px;
+  text-align: center;
+}
+
+.logo-name {
+  margin-top: 10px;
+  display: flex;
+  font-weight: 700;
+  color: $sub-color;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: $sub-color;
+  color: $sub-color;
+}

@@ -1,0 +1,84 @@
+@import "../../Styles/mixin.scss";
+@import "../../Styles/variables.scss";
+
+.projects-section {
+  background-color: $dark-bg;
+  color: $light-bg;
+  padding-top: 20px;
+}
+
+@media screen and (min-width: 1025px) {
+  .projects-section {
+    @include ls-sections;
+  }
+
+  .project-img {
+    height: 250px;
+    width: 400px;
+  }
+  .projects-inline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 30px;
+  }
+  .project-text-div {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .projects-section {
+    @include sections;
+  }
+  .projects {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .project-img {
+    height: 200px;
+    width: 400px;
+  }
+  .project-div {
+    margin: 10px 10px 30px 10px;
+  }
+  .project-btn-div {
+    margin-top: 20px;
+  }
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-div {
+  border: 3px solid $dark-bg2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.project-text-div {
+  padding-top: 30px;
+}
+
+.project-title {
+  text-align: left;
+  color: $sub-color;
+}
+
+.project-btn-div {
+  display: flex;
+  gap: 20px;
+}
+// @media screen and (min-width: 1025px)

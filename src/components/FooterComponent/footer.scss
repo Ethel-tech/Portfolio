@@ -1,0 +1,51 @@
+@import "../Styles/mixin.scss";
+@import "../Styles/variables.scss";
+
+@media screen and (max-width: 1025) {
+  .footer-section {
+    @include sections;
+  }
+}
+
+.footer-section {
+  padding: 20px;
+  color: $sub-color;
+  background-color: $dark-bg;
+}
+
+.footer-section a {
+  color: $btn-color;
+}
+
+@media screen and (min-width: 1025px) {
+  .footer-section {
+    @include ls-sections;
+  }
+  .footer-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.socials-div ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.socials-div ul li {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 18pt;
+}
+
+.copyright-div {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-hr {
+  border-top: 2px solid $sub-color;
+}
