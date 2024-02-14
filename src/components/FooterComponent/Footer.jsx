@@ -38,7 +38,7 @@ function Footer() {
         </div>
 
         <div className="copyright-div">
-          © 2023 Copyright. Made by&nbsp;
+          © 2024 Copyright. Made by&nbsp;
           <span>
             <a href="#">Sim-Jaja Boma</a>
           </span>
